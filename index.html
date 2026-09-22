@@ -36,10 +36,21 @@
         <p class="quote">“When the spotlight meets the ballot box.”</p>
         <div class="buttons"><button>Follow</button><button>Message</button></div>
         <div class="highlights">
-          <div><span>01</span><small>The Puzzle</small></div>
-          <div><span>02</span><small>The Case</small></div>
-          <div><span>03</span><small>The Theory</small></div>
-          <div><span>04</span><small>The Method</small></div>
+          <button class="highlight" data-open="puzzle"><span>01</span><small>The Puzzle</small></button>
+          <button class="highlight" data-open="case"><span>02</span><small>The Case</small></button>
+          <button class="highlight" data-open="theory"><span>03</span><small>The Theory</small></button>
+          <button class="highlight" data-open="method"><span>04</span><small>The Method</small></button>
+        </div>
+        <div class="profile-grid">
+          <button data-open="puzzle"><b>01</b><span>The puzzle</span></button>
+          <button data-open="question"><b>02</b><span>Research question</span></button>
+          <button data-open="case"><b>03</b><span>The case</span></button>
+          <button data-open="actors"><b>04</b><span>Key actors</span></button>
+          <button data-open="theory"><b>05</b><span>Theory</span></button>
+          <button data-open="method"><b>06</b><span>Method</span></button>
+          <button data-open="literature"><b>07</b><span>Literature</span></button>
+          <button data-open="why"><b>08</b><span>Why it matters</span></button>
+          <button data-open="timeline"><b>09</b><span>Next steps</span></button>
         </div>
         <div class="profile-note">Scroll to explore ↓</div>
       </div>
@@ -212,6 +223,20 @@
       <p class="caption"><b>politics.research</b> Any questions?</p>
     </section>
   </main>
+
+  <div class="viewer" aria-hidden="true">
+    <button class="viewer-close" aria-label="Close">×</button>
+    <button class="viewer-prev" aria-label="Previous">‹</button>
+    <div class="viewer-card">
+      <div class="viewer-top"><span class="viewer-progress"></span><span class="viewer-label">politics.research</span></div>
+      <div class="viewer-content"></div>
+      <div class="viewer-bottom">
+        <button class="viewer-back">← Back to profile</button>
+        <button class="viewer-next">Next →</button>
+      </div>
+    </div>
+    <button class="viewer-next-side" aria-label="Next">›</button>
+  </div>
 
   <nav class="dots" aria-label="Page navigation"></nav>
   <script src="script.js"></script>
